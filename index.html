@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kgotatso Mohlala - Front-end Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #20bf6b;
+            --background-color: #f2f2f2;
+            --text-color: #333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0;
+        }
+
+        .profile {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+        }
+        
+        .contacts {
+            display: none;
+        }
+
+        .objective {
+            text-align: center;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        .objective h3 {
+            font-family: 'Lemon', serif;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .objective h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            text-wrap: nowrap;
+            text-align: center;
+        }
+
+        .objective p {
+            font-family: Poppins, sans-serif;
+            font-weight: 600;
+            margin-block-start: 10px;
+            text-align: justify;
+        }
+
+        .edu-experience {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .education,
+        .experience {
+            flex: 1;
+            padding: 10px;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+        }
+       
+
+        .education h3,
+        .experience h3 {
+            font-family: 'Caprasimo', serif;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            font-family: 'Abril Fatface', serif;
+            
+        }
+
+        .shiftList li {
+            font-family: Poppins, sans-serif;
+            margin-left: 50px;
+        }
+
+        .skills-achievements {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .skills,
+        .achievements {
+            flex: 1;
+            padding: 10px;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+        }
+
+        .skills h3,
+        .achievements h3 {
+            font-family: 'Caprasimo', serif;
+            margin-bottom: 15px;
+        }
+
+        .projects {
+            background-color: #f8f8f8;
+            padding: 10px;
+            border-radius: 5px;
+            
+        }
+
+        .projects h3 {
+            font-family: 'Caprasimo', serif;
+            margin-bottom: 15px;
+        }
+
+        .list-style {
+            list-style-type: none;
+        }
+
+        .projects li {
+            margin-bottom: 5px;
+        }
+        
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            color: var(--text-color);
+        } 
+         
+        a:hover, a:active {
+            background: var(--secondary-color);
+        }
+
+        @media only screen and (min-width: 600px) {
+            main {
+                grid-template-columns: 1fr 2.5fr;
+            }
+
+            .objective,
+            .edu-experience,
+            .skills-achievements,
+            .projects {
+                text-align: left;
+            }
+            
+            .profile {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: column;
+                margin-bottom: 20px;
+            }
+            
+            .contacts {
+                display: flex;
+                flex-direction: column;
+                gap:2.5px;
+                border-top: 2px double black;
+            }
+            
+            .contacts i {
+                margin: 0 2px 0 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+      <div class="profile">
+           <div class="profile">
+            <img src="profile.jpg" alt="Profile Picture" style="height: 125px; width: 125px; border-radius: 50%;">
+        </div>
+        <div class="contacts">
+           <p><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:nelsonmohlala617@gmail.com"> nelsonmohlala617@gmail.com</a></p> 
+           <p><i class="fa fa-mobile" aria-hidden="true"></i> 0829620311</p>
+        </div>
+      </div>
+     
+     <div class="sub-main">
+                 <div class="objective">
+            <h3>Kgotatso Mohlala</h3>
+            <h4>- Front-end Web Developer</h4>
+            <p>Passionate and dedicated front-end web developer seeking a dynamic and growth-oriented position to leverage creativity, technical skills, and strong work ethic for innovative projects.</p>
+        </div>
+        <div class="edu-experience">
+            <div class="education">
+                <h3>Education</h3>
+                                   <ul>
+        <li class="list-style"><strong>Marhagi Secondary School</strong>
+            <ul class="shiftList">
+                <li>2018</li>
+                <li>Mathematics: 73%</li>
+                <li>Science: 76%</li>
+            </ul>
+        </li>
+        <br />
+        <li class="list-style"><strong>North West University, South Africa</strong>
+            <ul class="shiftList">
+                <li>2022 - Present</li>
+                <li>BSc in Computer Science and Mathematics</li>
+            </ul>
+        </li>
+    </ul>
+            </div>
+            <div class="experience">
+                <h3>Experience</h3>
+                                       <ul>
+                                   <li class="list-style"><strong>Mphumelomuhle Secondary School</strong>
+            <ul class="shiftList">
+                <li>Nov 2021 - Feb 2022</li>
+                <li>Education Assistant</li>
+            </ul>
+        </li>
+                       </ul>
+                     <br/>                        <ul>
+                                   <li class="list-style"><strong>Somlingo Primary School</strong>
+            <ul class="shiftList">
+                <li>Nov 2020 - April 2021</li>
+                <li>Education Assistant</li>
+            </ul>
+            </div>
+        </div>
+        <div class="skills-achievements">
+            <div class="skills">
+                <h3>Skills & Abilities</h3>
+                                      <ul class="list-style">
+        <li>HTML & CSS basics</li>
+        <li>Javascript basics</li>
+        <li>Java core</li>
+        <li>Java data structure and algorithms</li>
+        <li>Mathematics:
+            <ul class="shiftList">
+                <li>Calculus:
+                    <ul> 
+                        <li>Calculus 1</li>
+                        <li>Calculus 2</li>
+                        <li>Multivariable calculus</li>
+                    </ul>
+                </li>
+                <li>Linear Algebra</li>
+                <li>Linear Programming</li>
+            </ul>
+        </li>
+    </ul>
+            </div>
+            <div class="achievements">
+                <h3>Achievements</h3>
+                 <ul class="list-style">
+                     <li>
+                         Meta Fundamental of Front End Certificate
+                     </li>
+                 </ul>
+            </div>
+        </div>
+        <div class="projects">
+            <h3>Projects</h3>
+            <ul class="list-style">
+<li>
+                          <a href="#">Weather APP</a>
+                       </li>
+                       <li>
+                          <a href="#">Expense Tracker</a> 
+                       </li>
+                       <li>
+                          <a href="#">Search Movie</a> 
+                       </li>
+                       <li>
+                         <a href="#">Reciepe APP</a>  
+                       </li>
+            </ul>
+        </div>
+     </div>
+
+    </main>
+</body>
+</html>
